@@ -1,6 +1,6 @@
 package task121;
 
-public class E02_SleepingThread extends Thread {
+public class Threadss extends Thread {
 
 	public void run() {
 		int b=500_000;
@@ -12,19 +12,27 @@ public class E02_SleepingThread extends Thread {
 				System.out.print(e);
 				e.printStackTrace();
 			}
+			System.out.print("z ");
 			try {
-				System.out.print("z ");
+				
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				System.out.print(e);
 				e.printStackTrace();
 			}
 			System.out.print(b--+" ");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				System.out.print(e);
+				e.printStackTrace();
+			}
+			System.out.print("z ");
 		}
 	}
 
 	public static void main(String[] args) {
-		Thread t1 = new E02_SleepingThread();
+		Thread t1 = new Threadss();
 		t1.start();
 	}
 
