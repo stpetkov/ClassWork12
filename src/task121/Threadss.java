@@ -4,7 +4,7 @@ public class Threadss extends Thread {
 
 	public void run() {
 		int b=500_000;
-		for (int i = 0; i < 1_000_000; i++) {
+		for (int i = 0; i < 500_000; i++) {
 
 			try {
 				Thread.sleep(500);
